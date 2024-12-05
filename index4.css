@@ -1,0 +1,48 @@
+.logo{
+    display: flex;
+}
+.collage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Adjust for 3 columns */
+    grid-gap: 1em;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 1200px; /* Limit width for larger screens */
+    position: relative;
+}
+
+/* Image Styling */
+.collage-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.collage-container img:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Small Image Arrangement (for 5 images) */
+.collage-container .image-small {
+    grid-column: span 1; /* Default for small images */
+}
+
+/* Larger Image (spans across two columns) */
+.collage-container .image-large {
+    grid-column: span 2; /* Larger image spanning two columns */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .collage-container {
+        grid-template-columns: 1fr; /* Stack images vertically on smaller screens */
+    }
+
+    .collage-container img {
+        width: 100%; /* Ensure the images are responsive */
+    }
+}

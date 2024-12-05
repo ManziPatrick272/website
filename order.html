@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Lotion | Natural Skincare</title>
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="order.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+  <style>
+    body{
+        background-image: url(bck4.jpg);
+    }
+  </style>
+  <body>
+    
+    <header class="header">
+      <a href="#" class="logo">
+          <i class="ri-home-line"></i><span>Amber Glow</span>
+      </a>
+      <nav class="navbar">
+          <ul>
+              <li><a href="index.html" >Home</a></li>
+              <li><a href="about us.html">About Us</a></li>
+              <li><a class="active" href="order.html">Order</a></li>
+              <li><a href="contacts.html">Contact</a></li>
+          </ul>
+      </nav>
+    </header>
+
+   
+  <div class="order-page">
+    <h1>Place Your Order</h1>
+    
+    <section class="product-selection">
+      
+      <div class="product">
+        <img src="aloe vera.webp" alt="Lotion 1" class="product-image">
+        <h3>Organic Aloe Vera Lotion</h3>
+        <p class="product-description">Nourish and hydrate your skin with this soothing aloe vera lotion.</p>
+        <p class="product-price">$18.99</p>
+        <label for="quantity1">Quantity:</label>
+        <input type="number" id="quantity1" name="quantity1" min="1" value="1">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="lavender.jpg" alt="Lotion 2" class="product-image">
+        <h3>Lavender Infused Lotion</h3>
+        <p class="product-description">Relax and unwind with the calming aroma of lavender.</p>
+        <p class="product-price">$22.99</p>
+        <label for="quantity2">Quantity:</label>
+        <input type="number" id="quantity2" name="quantity2" min="1" value="1">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="vitamin e.jpg" alt="Lotion 3" class="product-image">
+        <h3>Vitamin E Rich Lotion</h3>
+        <p class="product-description">Deeply moisturize and repair your skin with vitamin E.</p>
+        <p class="product-price">$24.99</p>
+        <label for="quantity3">Quantity:</label>
+        <input type="number" id="quantity3" name="quantity3" min="1" value="1">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="500ml-Boston-Bottle-with-Black-Lotion-Pump.jpeg" alt="lotion 4" class="product-image">
+        <h3>Gold Bond Medicated</h3>
+        <p class="product-description">Relaxing Radiation Protection from the sun.</p>
+        <p class="product-price">$30.00</p>
+        <label type="Quantity4">Quantity:</label>
+        <input type="number" id="Quantity4" name="Quantity4" min="1" value="1">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="Rosequartz2COMP.webp" alt="lotion 5" class="product-image">
+        <h3>Jade Roller</h3>
+        <p class="product-description">A facial massage roller to relieve tension</p>
+        <p class="product-price">$9.89</p>
+        <label type="Quantity5">Quantity</label>
+        <input type="number" id="Quantity5" name="Quantity5" min="1" value="1">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+    
+      <div class="product">
+        <img src="cera.webp" alt="lotion 6" class="product-image">
+        <h3>CeraVe</h3>
+        <p class="product-description">Ultimate  moisture and heat stroke Protection</p>
+        <p class="product-price">$40.89</p>
+        <label type="Quantity6">Quantity</label>
+        <input type="number" id="Quantity6" name="Quantity6" min="1" value="1">
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    
+    </section>
+
+    <section class="order-form">
+      <h2>Complete Your Order</h2>
+      
+      <form action="submit_order.php" method="POST">
+        <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="address">Shipping Address:</label>
+          <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="payment-method">Payment Method:</label>
+          <select id="payment-method" name="payment-method" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="cash-on-delivery">Cash on Delivery</option>
+          </select>
+        </div>
+
+        <button type="submit" class="submit-order">Submit Order</button>
+      </form>
+    </section>
+  </div>
+  
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About Us</h3>
+        <p>
+          Amber Glow is dedicated to providing top-quality skincare solutions with a
+          focus on natural ingredients and sustainable practices.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about us.html">About Us</a></li>
+          <li><a href="#">Order</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:pattymanzi2020@gmail.com">pattymanzi2020@gmail.com</a></p>
+        <p>Phone: <a href="tel:+250794727224">+250 794 727 224</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Amber Glow. All Rights Reserved | Designed by Patrick.</p>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
